@@ -1,0 +1,7 @@
+%YAML 1.1
+---
+vars:
+  address-groups:
+    HOME_NET: "[192.168.0.0/16,10.0.0.0/8]"
+rule-files:
+  - /etc/suricata/rules/dpi.rules

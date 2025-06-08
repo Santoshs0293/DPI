@@ -1,0 +1,21 @@
+dpi_engine:
+  dpdk:
+    port: 0
+    rx_ring_size: 1024
+    tx_ring_size: 1024
+    mbuf_pool_size: 8191
+  ndpi:
+    protocol_bitmask: all
+  hyperscan:
+    patterns:
+      - "HTTP/1\\.[0-1]"
+      - "GET /"
+      - "POST /"
+  ml:
+    rf_model_path: "models/rf_model.pkl"
+    cnn_model_path: "models/cnn_model.h5"
+  suricata:
+    config_file: "config/suricata.yaml"
+logging:
+  level: debug
+  output: "dpi_log.txt"

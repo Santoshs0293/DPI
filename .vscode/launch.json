@@ -1,0 +1,39 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug DPI Engine",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/dpi_engine",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "sudo": true,
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        },
+        {
+            "name": "Run ML Classification",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/ml_classification.py",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Run Anomaly Detection",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/anomaly_detection.py",
+            "console": "integratedTerminal"
+        }
+    ]
+}

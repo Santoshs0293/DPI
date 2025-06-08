@@ -1,0 +1,14 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build DPI Engine",
+            "type": "shell",
+            "command": "gcc -o src/dpi_engine src/dpi_engine.c src/packet_capture.c src/protocol_dissection.c src/pattern_matching.c src/utils/logging.c src/utils/config_parser.c -lrte_eal -lrte_mbuf -lrte_ethdev -lndpi -lhs -lyaml",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}

@@ -1,0 +1,4 @@
+{
+    "C_Cpp.default.includePath": ["/usr/include", "/usr/local/include"],
+    "python.pythonPath": "/usr/bin/python3"
+}
